@@ -1,0 +1,25 @@
+<h2>Contacts</h2>
+<p>You can write to our email your wishes, ask a question or share your impressions</p><br>
+
+<form action="/contacts" method="POST">
+
+<div class="form-group">
+<label>Your name:</label>
+<input  name="contacts_name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your name" value="<%= @contacts_name %>">
+</div>
+
+<div class="form-group">
+    <label>Email address</label>
+
+        <input type="email" name = "contacts_mail" class="form-control" id="exampleFormControlInput1" placeholder="Your mail" value="<%= @contacts_mail %>">
+
+ </div>
+
+ <textarea style="width:300px; height:150px;" name="contacts_text" placeholder="Enter message"></textarea><br>
+
+ <button type="submit" class="btn btn-primary">Send</button>
+
+ </form>
+
+ <%= @success %>
+

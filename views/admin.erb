@@ -1,0 +1,11 @@
+<h2>For staff page</h2>
+
+<p><%= @title %></p>
+
+<form action="/admin" method="POST">
+    Your name:<br> <input type="text" name="admin"/><br>
+    Your password:<br> <input type="text" name="admin_pas"/><br>
+    <button type="submit" class="btn btn-primary">Send</button>
+</form>
+<br>
+<p><%= @message %></p>
